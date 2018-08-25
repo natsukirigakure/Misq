@@ -33,6 +33,12 @@ namespace Misq
 		{
 			get;
 		}
+        
+		public Me(string Host, string Token) : base(null)
+        {
+            this.Host = Host;
+            this.Token = Token;
+        }
 
 		public Me(string Host, string userToken, string appSecret) : base(null)
 		{
